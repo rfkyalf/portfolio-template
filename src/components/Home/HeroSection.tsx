@@ -25,7 +25,7 @@ export default function HeroSection() {
         className="w-full h-full absolute"
         particleColor="#FFFFFF"
       />
-      <section className="py-10 px-20 h-screen relative">
+      <section className="py-10 px-20 h-screen relative pt-20">
         <div className="flex items-center h-full justify-between">
           <div>
             <h1 className="text-neutral-50 font-bold text-[40px]">

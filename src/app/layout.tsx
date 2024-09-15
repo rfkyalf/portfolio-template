@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Outfit } from 'next/font/google';
+import { SparklesCore } from '@/components/ui/sparkles';
+
+const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-[#11071F]`}>{children}</body>
+      <body className={`antialiased bg-[#11071F] ${outfit.className} h-screen`}>
+        {children}
+      </body>
     </html>
   );
 }
